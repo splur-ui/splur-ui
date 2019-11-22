@@ -1,0 +1,37 @@
+{
+  "name": "splur-ui",
+  "version": "0.0.1",
+  "description": "UI Framework that facilitates customizable Designing and Theming",
+  "main": "dist/splur-ui.js",
+  "module": "dist/splur-ui.js",
+  "unpkg": "dist/splur-ui.js",
+  "scripts": {
+    "build": "webpack --config build/webpack.prod.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/splur-ui/splur-ui.git"
+  },
+  "keywords": [
+    "ui",
+    "library",
+    "framework",
+    "components",
+    "vue",
+    "ui library",
+    "ui framework"
+  ],
+  "author": "Vinayak Nivalkar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/splur-ui/splur-ui/issues"
+  },
+  "homepage": "https://github.com/splur-ui/splur-ui#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.10"
+  }
+}
