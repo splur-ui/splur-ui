@@ -1,5 +1,7 @@
 import component from './components/index'
 
+import './styles/index.styl'
+
 export function install(Vue){
     if(install.installed) return;
     install.installed = true;
