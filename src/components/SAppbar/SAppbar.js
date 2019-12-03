@@ -16,5 +16,13 @@ export default {
         fixed: {
             type: Boolean
         }
+    },
+    mounted: function () {
+        this.computed.appbarheight = this.height
+    },
+    watch: {
+        height: function(val) {
+            this.computed.appbarheight = val
+        }
     }
 }

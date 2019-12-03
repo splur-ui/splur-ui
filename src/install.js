@@ -5,6 +5,18 @@ import './styles/index.styl'
 export function install(Vue){
     if(install.installed) return;
     install.installed = true;
+    Vue.mixin({
+        data: function () {
+            return {
+                computed: {
+                    appbarheight: ''
+                }
+            }
+        }
+    })
+    Vue.prototype.$splur = {
+        appbarheight: 60
+    };
     Object.keys(component).forEach(name => {
         Vue.component(name, component[name])
     })
